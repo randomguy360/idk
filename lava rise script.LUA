@@ -11,12 +11,11 @@ Lava = script.Parent.Parent.Lava
 LavaVelocity = Lava.BodyVelocity
 
 while true do
-LavaVelocity.velocity = Vector3.new(0,15,0)
+LavaVelocity.velocity = Vector3.new(0,40,0)
 wait(5)
-LavaVelocity.velocity = Vector3.new(0,30,0)
+LavaVelocity.velocity = Vector3.new(0,80,0)
 wait(1)
 LavaVelocity.velocity = Vector3.new(0,-200,0)
 wait(1)
-LavaVelocity.velocity = Vector3.new(0,0,0)
-wait(1)
+
 end
