@@ -1,4 +1,4 @@
-disasters = {"Raising Lava","Giant noob","Meteor","Tornado"} 
+disasters = {"Meteor","Rising Lava","Tornado"} 
 countdownTime = 15 
 disasterTime = 45
 
@@ -66,7 +66,7 @@ while true do
 
 	local m = chooseDisaster():clone()
 
-	if disasterMessage ~= nil then
+     if disasterMessage ~= nil then
 		local msg = Instance.new("Message")
 		msg.Name = "DisasterMsg"
 		msg.Text = string.format(disasterMessage, m.Name)
@@ -80,7 +80,8 @@ while true do
 	wait(disasterTime)
 	m:remove()
 
-	if leaderboard ~= nil then -- For use with the bts leaderboard.
+	if leaderboard ~= nil then 
 		leaderboard.running.Value = false
 	end
 end
+
